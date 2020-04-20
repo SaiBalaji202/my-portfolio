@@ -181,4 +181,95 @@ a {
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
 }
+
+#plant-left {
+  -webkit-animation: plant 1s ease infinite alternate;
+          animation: plant 1s ease infinite alternate;
+}
+
+#plant-right {
+  -webkit-animation: plant 1s ease infinite alternate 1s;
+          animation: plant 1s ease infinite alternate 1s;
+}
+
+#clock-arrow {
+  -webkit-animation: clock 1s linear infinite;
+          animation: clock 1s linear infinite;
+  transform-box: fill-box;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+#me {
+  -webkit-animation: me 1s ease infinite alternate;
+          animation: me 1s ease infinite alternate;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes plant {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+@keyframes plant {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%);
+  }
+}
+
+@-webkit-keyframes clock {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes clock {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes me {
+  from {
+    -webkit-transform: rotatez(-5deg);
+            transform: rotatez(-5deg);
+  }
+  to {
+    -webkit-transform: rotatez(5deg);
+            transform: rotatez(5deg);
+  }
+}
+
+@keyframes me {
+  from {
+    -webkit-transform: rotatez(-5deg);
+            transform: rotatez(-5deg);
+  }
+  to {
+    -webkit-transform: rotatez(5deg);
+            transform: rotatez(5deg);
+  }
+}
 /*# sourceMappingURL=style.css.map */
