@@ -1,0 +1,79 @@
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+
+  nav {
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+    min-height: 10vh;
+    width: 60%;
+
+    .logo {
+      @include flex(flex-start, center, row);
+      flex: 1 1 10rem;
+
+      h1 {
+        margin: 2rem;
+      }
+    }
+
+    ul {
+      @include flex(space-around, center, row);
+      flex: 1 1 40rem;
+    }
+  }
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  @include flex(space-between, center, row);
+  flex-wrap: wrap;
+
+  h2 {
+    display: inline-block;
+    font-size: 8rem;
+    padding-top: 2rem;
+    background-image: $gradient;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  h3 {
+    font-size: 6rem;
+    padding: 2rem 0;
+  }
+  p {
+    padding: 2rem 0;
+    color: $gray-text;
+  }
+}
+
+.splash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.intro-social {
+  margin-top: 2rem;
+  a:not(:last-of-type) {
+    margin-right: 5rem;
+  }
+}
+
+.active {
+  background-color: $gray-text;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.intro-text,
+.intro-images {
+  flex: 1 1 40rem;
+}
